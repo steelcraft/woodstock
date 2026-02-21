@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=2560,1440
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=61
+NLCnt=103
 TXCnt=1
 
 [shapedef]
@@ -163,8 +163,8 @@ Pin="1",a,3,-3,6,9
 Name=Resistor
 Definition=Resistor
 Shape=Resistor
-Mask=6145
-Used=182
+Mask=6401
+Used=186
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -176,7 +176,7 @@ Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
 Mask=6145
-Used=36
+Used=40
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -188,7 +188,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=257
-Used=293
+Used=296
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -223,7 +223,7 @@ Name=Pot
 Definition=Macro
 Shape=Pot
 Mask=4864
-Used=2
+Used=5
 memo=Potentiometer Macro
 Label Offset=32,4,9,11
 PinCnt=3
@@ -232,7 +232,7 @@ Pin="PINB",a,3,2,6,5
 Pin="PINC",a,6,0,-12,-5
 
 [Circuit]
-Window Placement=0,1, -1,-1, -8,-31, 0,0,1755,1153
+Window Placement=0,1, -1,-1, -8,-31, 0,0,1212,1153
 Default Object=Color=#000080
 Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -420,11 +420,11 @@ Pxs=872,1296,872,1304
 
 [Comp]
 Name=Ground
-Px=1344,1200
+Px=1840,1264
 Rot=1
 
 [Wire]
-Pxs=1344,1016,1344,1128
+Pxs=1832,1016,1832,1136
 
 [Wire]
 Pxs=840,1016,1112,1016
@@ -439,7 +439,7 @@ Rot=1
 
 [Comp]
 Name=Battery
-Px=1344,1176
+Px=1832,1184
 Rot=3
 
 [Attr]
@@ -479,7 +479,7 @@ V
 Pxs=656,1192,656,1224
 
 [Wire]
-Pxs=1344,1176,1344,1200
+Pxs=1832,1184,1832,1264
 
 [Comp]
 Name=ECC83
@@ -647,7 +647,7 @@ V
 
 [Comp]
 Name=Capacitor
-Px=1160,1144
+Px=1152,1144
 
 [Attr]
 ON=16,12,PART
@@ -656,7 +656,7 @@ Style=8192
 
 [Attr]
 ON=16,26,CAPACITANCE
-V=0.022u
+V=0.1u
 Style=8192
 
 [Attr]
@@ -703,7 +703,7 @@ Pxs=832,1304,832,1312
 Pxs=1000,1200,1016,1200
 
 [Wire]
-Pxs=1112,1144,1160,1144
+Pxs=1112,1144,1152,1144
 
 [Wire]
 Pxs=832,1240,832,1248
@@ -724,10 +724,320 @@ Pxs=1104,1240,1104,1248
 Pxs=1144,1240,1144,1248
 
 [Wire]
-Pxs=1112,1016,1344,1016
+Pxs=1112,1016,1832,1016
 
 [Wire]
 Pxs=1112,1144,1112,1176
+
+[Wire]
+Pxs=1832,1264,1840,1264
+
+[Comp]
+Name=Resistor
+Px=1248,1176
+Rot=1
+
+[Attr]
+ON=8,11,PART
+V=R8
+Style=8192
+
+[Attr]
+ON=8,25,RESISTANCE
+V=100k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Capacitor
+Px=1248,1312
+Rot=1
+
+[Attr]
+ON=12,12,PART
+V=C6
+Style=8192
+
+[Attr]
+ON=12,26,CAPACITANCE
+V=47n
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Resistor
+Px=1248,1400
+Rot=1
+
+[Attr]
+ON=8,11,PART
+V=R9
+Style=8192
+
+[Attr]
+ON=8,25,RESISTANCE
+V=1meg
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Ground
+Px=1248,1480
+Rot=1
+
+[Wire]
+Pxs=1200,1144,1248,1144
+
+[Wire]
+Pxs=1248,1144,1248,1176
+
+[Wire]
+Pxs=1248,1224,1248,1232
+
+[Wire]
+Pxs=1248,1360,1248,1400
+
+[Wire]
+Pxs=1248,1448,1248,1480
+
+[Comp]
+Name=Capacitor
+Px=1288,1144
+
+[Attr]
+ON=16,12,PART
+V=C7
+Style=8192
+
+[Attr]
+ON=16,26,CAPACITANCE
+V=470p
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Capacitor
+Px=1288,1232
+
+[Attr]
+ON=16,12,PART
+V=C8
+Style=8192
+
+[Attr]
+ON=16,26,CAPACITANCE
+V=100n
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Capacitor
+Px=1288,1320
+
+[Attr]
+ON=16,12,PART
+V=C9
+Style=8192
+
+[Attr]
+ON=16,26,CAPACITANCE
+V=47n
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Pot
+Px=1368,1208
+Rot=3
+
+[Attr]
+ON=-25,-25,PART
+V=X4
+Style=8192
+
+[Attr]
+ON=-30,-39,FILE
+V=Pot
+
+[Attr]
+ON=-40,-67,Param:POTSIZE
+V=250k
+
+[Attr]
+ON=-25,-81,Param:PERCENT
+V=50
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Pot
+Px=1368,1304
+Rot=3
+
+[Attr]
+ON=-25,-25,PART
+V=X5
+Style=8192
+
+[Attr]
+ON=-30,-39,FILE
+V=Pot
+
+[Attr]
+ON=-40,-67,Param:POTSIZE
+V=250k
+
+[Attr]
+ON=-25,-81,Param:PERCENT
+V=100
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Pot
+Px=1368,1384
+Rot=3
+
+[Attr]
+ON=-25,-25,PART
+V=X6
+Style=8192
+
+[Attr]
+ON=-30,-39,FILE
+V=Pot
+
+[Attr]
+ON=-32,-67,Param:POTSIZE
+V=50k
+
+[Attr]
+ON=-25,-81,Param:PERCENT
+V=50
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1248,1144,1288,1144
+
+[Wire]
+Pxs=1248,1232,1288,1232
+
+[Wire]
+Pxs=1248,1232,1248,1280
+
+[Wire]
+Pxs=1248,1320,1288,1320
+
+[Wire]
+Pxs=1248,1312,1248,1320
+
+[Wire]
+Pxs=1336,1144,1368,1144
+
+[Wire]
+Pxs=1368,1144,1368,1160
+
+[Wire]
+Pxs=1368,1208,1368,1232
+
+[Wire]
+Pxs=1368,1304,1368,1320
+
+[Wire]
+Pxs=1336,1320,1368,1320
+
+[Wire]
+Pxs=1368,1320,1368,1336
+
+[Wire]
+Pxs=1336,1232,1368,1232
+
+[Wire]
+Pxs=1368,1232,1368,1256
+
+[Wire]
+Pxs=1384,1280,1392,1280
+
+[Wire]
+Pxs=1392,1256,1392,1280
+
+[Wire]
+Pxs=1368,1256,1392,1256
+
+[Wire]
+Pxs=1384,1360,1392,1360
+
+[Wire]
+Pxs=1392,1336,1392,1360
+
+[Wire]
+Pxs=1368,1336,1392,1336
+
+[Comp]
+Name=Ground
+Px=1368,1408
+Rot=1
+
+[Wire]
+Pxs=1368,1384,1368,1408
+
+[Comp]
+Name=Resistor
+Px=1200,1312
+Rot=1
+
+[Attr]
+ON=8,11,PART
+V=R10
+Style=8192
+
+[Attr]
+ON=8,25,RESISTANCE
+V=1000meg
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1200,1280,1200,1312
+
+[Wire]
+Pxs=1200,1280,1248,1280
+
+[Wire]
+Pxs=1248,1280,1248,1312
+
+[Comp]
+Name=Ground
+Px=1200,1360
+Rot=1
 
 [Grid Text]
 Text="IN"
@@ -933,9 +1243,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=593,958
+SB 3=737,1006
 Scale 3=0.66666666666666663
-Px=984,1208
+Px=1371,1367
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -999,7 +1309,6 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-SB 0=0,1
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -1050,7 +1359,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=0,1, -1,-1, -8,-31, 834,48,2119,1126
+Window Placement=0,1, -1,-1, -8,-31, 1085,39,2370,1117
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1115,7 +1424,7 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=4
+MonMaxShow=5
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
@@ -1744,8 +2053,34 @@ IgnoreExprErrors=False
 
 [WaveForm]
 Analysis=Transient
-Plt=1
+Plt=5
 AliasID=1
+XExp=T
+YExp=v(18)
+XRng=1.1,1
+YRng=75,-50
+Options=LINEARX,LINEARY
+Range Grid X=0.02
+Range Grid Y=25
+Enable=Enable
+Line Color=#0000FF
+Text Color=#0000FF
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=1
+AliasID=5
 XExp=T
 YExp=v(IN)
 XRng=1.1,1
@@ -1754,8 +2089,8 @@ Options=LINEARX,LINEARY
 Range Grid X=0.02
 Range Grid Y=0.025
 Enable=Enable
-Line Color=#0000FF
-Text Color=#0000FF
+Line Color=#FF0000
+Text Color=#FF0000
 Rainbow=False
 VFmtX=3
 VFmtY=3
@@ -1801,10 +2136,10 @@ AliasID=2
 XExp=T
 YExp=v(9)
 XRng=1.1,1
-YRng=375
+YRng=240,40
 Options=LINEARX,LINEARY
 Range Grid X=0.02
-Range Grid Y=75
+Range Grid Y=40
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -1827,10 +2162,10 @@ AliasID=4
 XExp=T
 YExp=v(12)
 XRng=1.1,1
-YRng=180,-120
+YRng=120,-80
 Options=LINEARX,LINEARY
 Range Grid X=0.02
-Range Grid Y=60
+Range Grid Y=40
 Enable=Enable
 Line Color=#FF00FF
 Text Color=#FF00FF
