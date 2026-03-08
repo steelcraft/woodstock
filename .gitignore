@@ -1,3 +1,4 @@
 *.bak_cir
 *.inx
 *.TNO
+/preamp/hardware/design/*
